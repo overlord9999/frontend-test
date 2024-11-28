@@ -1,7 +1,9 @@
+/*Base*/
 ul
 {
     list-style-type: none;
 }
+/*Button*/
 .button
 {
     color: #FAF4EA;
@@ -15,6 +17,7 @@ ul
     color: #465929;
     background-color: transparent;  
 }
+/*Link*/
 .link
 {
     color:#FAF4EA ;
@@ -23,6 +26,7 @@ ul
 {
     color: #819B57;
 }
+/*Hero section*/
 .hero-title
 {
     color: #FAF4EA;
@@ -30,4 +34,15 @@ ul
 .hero-title .accent
 {
     color: #819B57
+}
+/*Advantages section*/
+.advantages-list
+{
+color: #FAF4EA;
+background-color: #819B57;
+}
+
+.section-title
+{
+color: #31261A;
 }

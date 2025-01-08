@@ -57,6 +57,8 @@ address
 }
 ul
 {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 .visually-hidden
@@ -76,7 +78,7 @@ ul
 .container
 {
     width: 100%;
-   max-width: 1288px;
+    max-width: 1288px;
     margin: 0 auto;
 }
 /*Button*/
@@ -105,8 +107,36 @@ ul
 {
     color: var(--color-brand-light);
     text-decoration: underline;
-    font-weight: 600;
 }
+
+/*Header*/
+.header {
+    background-color: grey;
+}
+
+.header-container
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-nav
+{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+}
+
+.header-menu
+{
+    display: flex;
+    flex-grow: 1;
+    gap: 64px;
+    justify-content: center;
+}
+
 /*Hero section*/
 .hero-section
 {
@@ -125,13 +155,23 @@ ul
     color: var(--color-brand-light);
 }
 /*Advantages section*/
+
+.advantages-section
+{
+    background-color: var(--color-brand-light);
+    padding: 16px 0;
+}
+
 .advantages-list
 {
-color: var(--color-primary-light);
-background-color:var(--color-brand-light) ;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
+
 .advantages-item
 {
+    color: var(--color-primary-light);
     font-size: 20px;
     font-weight: 300
 }
@@ -151,6 +191,18 @@ color: var(--color-brand-dark);
 {
     padding-top: 96px;
 }
+
+.traditions-container
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.traditions-content
+{
+    max-width: 710px;
+}
 .traditions-title
 {
     margin-bottom: 42px;
@@ -165,6 +217,10 @@ font-weight: 600;
 text-transform: uppercase;
 }
 
+.traditions-text.limited
+{
+    max-width: 340px;
+}
 /*Chefs section*/
 .chefs-title
 {
@@ -178,10 +234,30 @@ text-transform: uppercase;
 }
 
 /*Formats section*/
+.formats-list   
+{
+    display: flex;
+    gap: 20px;
+}
+
+.formats-item
+{
+    flex-basis: calc(100% - 40px / 3);
+}
+
+.format-card
+{
+    padding: 24px;
+    border: 1px solid gray; /*(need to change)*/
+    border-radius: 16px;
+    min-height: 270px; /*(need to change)*/
+}
+
 .formats-title
 {
     margin-bottom: 80px;
 }
+
 .format-title
 {
     font-size: 24;
